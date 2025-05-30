@@ -4,12 +4,12 @@ using AL.Aplicacion.Entidades;
 using AL.Aplicacion.Interfaces;
 namespace AL.Repositorios;
 
-public class AlojamientoRepositorio:IAlojamientoRepositorio
+public class AlojamientoRepositorio : IAlojamientoRepositorio
 {
     //Caso de uso alojamiento ALTA
     public void Agregar(Alojamiento e){
-        
-        using(var db=new EntidadesContext()){  
+
+        using (var db = new EntidadesContext()){
             db.Add(e);
             db.SaveChanges();
         }
@@ -17,12 +17,12 @@ public class AlojamientoRepositorio:IAlojamientoRepositorio
 
     //Caso de uso alojamiento BAJA
     public void Eliminar(Alojamiento e){
-        using(var db=new EntidadesContext()){  
+        using (var db = new EntidadesContext()){
             var expediente = db.Alojamientos.Where(t => t.Id == e.Id).SingleOrDefault();
-            if(expediente != null){
-                 db.Remove(expediente);
-                 db.SaveChanges();
-        }
+            if (expediente != null){
+                db.Remove(expediente);
+                db.SaveChanges();
+            }
         }
     }
     //También se podría obtener por Id por si el administrador quiere buscar un alojamiento
@@ -34,7 +34,7 @@ public class AlojamientoRepositorio:IAlojamientoRepositorio
             return alojamiento;
         }
     }
-    
+
     //Creo que este método va a servir para "Buscar Alojamiento" en la UI
     public List<Alojamiento> ObtenerPorCiudadYDisponibilidad(String ciudad, DateTime fechaDesde,DateTime fechaHasta)
     {
@@ -51,26 +51,40 @@ public class AlojamientoRepositorio:IAlojamientoRepositorio
     }
     public List<Alojamiento> ListarAlojamientosConSusReservas()
     {
-        using(var db = new EntidadesContext()){
+        using (var db = new EntidadesContext())
+        {
             return db.Alojamientos.Include(a => a.Reservas).ToList();
         }
-    } 
+    }
 
-    
+
     //Caso de uso consulta TODOS
-    public List<Alojamiento> ObtenerTodos(){
-        using (var db=new EntidadesContext()){
+    public List<Alojamiento> ObtenerTodos()
+    {
+        using (var db = new EntidadesContext())
+        {
             List<Alojamiento> resultado = db.Alojamientos.ToList();
-            return resultado;  
+            return resultado;
         }
     }
 
 
     //Caso de uso alojamiento MODIFICACION
-    public void Modificar(Alojamiento e){
-        using(var db=new EntidadesContext()){  
+    public void Modificar(Alojamiento e)
+    {
+        using (var db = new EntidadesContext())
+        {
             db.Alojamientos.Update(e);
             db.SaveChanges();
+        }
+    }
+    
+    //Consulta por Id, para que el administrador pueda ver los detalles de un alojamiento
+    public async Task<Alojamiento?> ObtenerPorId(int id)
+    {
+        using (var db = new EntidadesContext())
+        {
+            return await db.Alojamientos.FindAsync(id);
         }
     }
 }

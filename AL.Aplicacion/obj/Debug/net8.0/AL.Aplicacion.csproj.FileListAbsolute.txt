@@ -10,3 +10,15 @@ C:\Users\CONSU\proyectoIS2\AL\AL.Aplicacion\obj\Debug\net8.0\refint\AL.Aplicacio
 C:\Users\CONSU\proyectoIS2\AL\AL.Aplicacion\obj\Debug\net8.0\AL.Aplicacion.pdb
 C:\Users\CONSU\proyectoIS2\AL\AL.Aplicacion\obj\Debug\net8.0\ref\AL.Aplicacion.dll
 C:\Users\CONSU\proyectoIS2\AL\AL.Aplicacion\obj\Debug\net8.0\AL.Aplicacion.sourcelink.json
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb\AL.Aplicacion\obj\Debug\net8.0\AL.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb\AL.Aplicacion\obj\Debug\net8.0\AL.Aplicacion.AssemblyInfoInputs.cache
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb\AL.Aplicacion\obj\Debug\net8.0\AL.Aplicacion.AssemblyInfo.cs
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb\AL.Aplicacion\obj\Debug\net8.0\AL.Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb\AL.Aplicacion\obj\Debug\net8.0\AL.Aplicacion.sourcelink.json
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb\AL.Aplicacion\obj\Debug\net8.0\AL.Aplicacion.dll
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb\AL.Aplicacion\obj\Debug\net8.0\refint\AL.Aplicacion.dll
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb\AL.Aplicacion\obj\Debug\net8.0\AL.Aplicacion.pdb
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb\AL.Aplicacion\bin\Debug\net8.0\AL.Aplicacion.deps.json
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb\AL.Aplicacion\bin\Debug\net8.0\AL.Aplicacion.dll
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb\AL.Aplicacion\bin\Debug\net8.0\AL.Aplicacion.pdb
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb\AL.Aplicacion\obj\Debug\net8.0\ref\AL.Aplicacion.dll

@@ -1,4 +1,7 @@
-﻿@code {
+﻿@inject IServicioSesion ServicioSesion
+
+
+@code {
     private bool navCollapsed = true;
 
     private void ToggleNav()
@@ -14,7 +17,25 @@
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
-</div>
+
+    <div class="nav-item px-3"></div>
+        <NavLink class="nav-link" href="alojamientos">
+            <span class="bi bi-house-fill-nav-menu" aria-hidden="true"></span> Alojamientos
+        </NavLink>
+    </div>
+
+    @if (ServicioSesion.Rol == RolUsuario.Administrador)
+    {
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="/alojamientos">
+                <span class="oi oi-pencil" aria-hidden="true"></span> Editar publicaciones
+            </NavLink>
+        </li>
+    }
+    <div class="nav-item px-3"></div
+        <NavLink class="nav-link" href="/misreservas">
+            <span class="bi bi-calendar-check-fill-nav-menu" aria-hidden="true"></span> Mis reservas
+        </NavLink>
 
 <!--<input type="checkbox" title="Navigation menu" class="navbar-toggler" /> -->
 <!--

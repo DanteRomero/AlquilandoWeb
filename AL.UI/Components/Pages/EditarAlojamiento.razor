@@ -1,0 +1,80 @@
+@page "/editar-alojamiento/{AlojamientoId:int}"
+@inject AlojamientoEdicion alojamientoEdicion
+@inject IAlojamientoRepositorio alojamientoRepo
+@inject IServicioSesion sesion
+@using AL.Aplicacion.Entidades
+
+<h3>Editar Alojamiento</h3>
+
+@if (alojamiento != null)
+{
+    <EditForm Model="@alojamiento" OnValidSubmit="Guardar" FormName="AlojamientoForm">
+        <div class="mb-2">
+            <label>Nombre</label>
+            <InputText @bind-Value="alojamiento.Nombre" class="form-control" />
+        </div>
+        <div class="mb-2">
+            <label>Ciudad</label>
+            <InputText @bind-Value="alojamiento.Ciudad" class="form-control" />
+        </div>
+        <div class="mb-2">
+            <label>Dirección</label>
+            <InputText @bind-Value="alojamiento.Direccion" class="form-control" />
+        </div>
+        <div class="mb-2">
+            <label>Capacidad Máxima</label>
+            <InputNumber @bind-Value="alojamiento.CapacidadMaxima" class="form-control" />
+        </div>
+        <div class="mb-2">
+            <label>Dormitorios</label>
+            <InputNumber @bind-Value="alojamiento.CantidadDormitorios" class="form-control" />
+        </div>
+        <div class="mb-2">
+            <label>Camas</label>
+            <InputNumber @bind-Value="alojamiento.CantidadCamas" class="form-control" />
+        </div>
+        <div class="mb-2">
+            <label>Baños</label>
+            <InputNumber @bind-Value="alojamiento.CantidadBaños" class="form-control" />
+        </div>
+        <div class="mb-2">
+            <label>Precio por Noche</label>
+            <InputNumber @bind-Value="alojamiento.PrecioPorNoche" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+    </EditForm>
+}
+else
+{
+    <p>Cargando alojamiento...</p>
+}
+
+@code {
+    [Parameter]
+    public int AlojamientoId { get; set; }
+
+    private Alojamiento? alojamiento;
+
+    protected override async Task OnInitializedAsync()
+    {
+        alojamiento = await alojamientoRepo.ObtenerPorId(AlojamientoId);
+        if (alojamiento == null)
+        {
+            Console.WriteLine("Alojamiento no encontrado.");
+        }
+    }
+
+    private void Guardar()
+    {
+        try
+        {
+            alojamientoEdicion.Ejecutar(alojamiento!, sesion.Rol);
+            Console.WriteLine("Alojamiento actualizado correctamente.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+}

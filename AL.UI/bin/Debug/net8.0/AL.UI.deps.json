@@ -708,7 +708,10 @@
       },
       "AL.Aplicacion/1.0.0": {
         "runtime": {
-          "AL.Aplicacion.dll": {}
+          "AL.Aplicacion.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "AL.Repositorios/1.0.0": {
@@ -717,7 +720,10 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5"
         },
         "runtime": {
-          "AL.Repositorios.dll": {}
+          "AL.Repositorios.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

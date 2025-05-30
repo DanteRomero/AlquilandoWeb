@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mPSQh0KhERkmZraVCeYHASIvq7b1ih4zLPp0+ewVAsg=",
+  "Hash": "RU2qi0pqZ+28zGtolSyw3ixjgA0OWZDtJvBr7d0qIBE=",
   "Source": "AL.UI",
   "BasePath": "_content/AL.UI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AL.UI\\wwwroot",
       "Source": "AL.UI",
-      "ContentRoot": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\",
       "BasePath": "_content/AL.UI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AL.UI.styles.css",
+      "Identity": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AL.UI.styles.css",
       "SourceId": "AL.UI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/AL.UI",
       "RelativePath": "AL.UI.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AL.UI.styles.css"
+      "OriginalItemSpec": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AL.UI.styles.css"
     },
     {
-      "Identity": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AL.UI.bundle.scp.css",
+      "Identity": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AL.UI.bundle.scp.css",
       "SourceId": "AL.UI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/AL.UI",
       "RelativePath": "AL.UI.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AL.UI.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AL.UI.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\app.css",
       "SourceId": "AL.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\",
       "BasePath": "_content/AL.UI",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "AL.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\",
       "BasePath": "_content/AL.UI",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "AL.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\",
       "BasePath": "_content/AL.UI",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\favicon.png",
       "SourceId": "AL.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\",
       "BasePath": "_content/AL.UI",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\logo.jpg",
+      "Identity": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\logo.jpg",
       "SourceId": "AL.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\",
       "BasePath": "_content/AL.UI",
       "RelativePath": "logo.jpg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\logo.jpg"
     },
     {
-      "Identity": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\uploads\\06ccb595-355e-48ad-814a-b84093b46704_imagenMuestra.jpg",
+      "Identity": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\uploads\\06ccb595-355e-48ad-814a-b84093b46704_imagenMuestra.jpg",
       "SourceId": "AL.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\",
       "BasePath": "_content/AL.UI",
       "RelativePath": "uploads/06ccb595-355e-48ad-814a-b84093b46704_imagenMuestra.jpg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\06ccb595-355e-48ad-814a-b84093b46704_imagenMuestra.jpg"
     },
     {
-      "Identity": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\uploads\\08193649-8e0a-4c93-910d-a587df2fe1b0_imagenMuestra.jpg",
+      "Identity": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\uploads\\08193649-8e0a-4c93-910d-a587df2fe1b0_imagenMuestra.jpg",
       "SourceId": "AL.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\",
       "BasePath": "_content/AL.UI",
       "RelativePath": "uploads/08193649-8e0a-4c93-910d-a587df2fe1b0_imagenMuestra.jpg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\08193649-8e0a-4c93-910d-a587df2fe1b0_imagenMuestra.jpg"
     },
     {
-      "Identity": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\uploads\\6288fb07-df6f-4c61-bd53-4333a2368852_imagenMuestra.jpg",
+      "Identity": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\uploads\\6288fb07-df6f-4c61-bd53-4333a2368852_imagenMuestra.jpg",
       "SourceId": "AL.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\",
       "BasePath": "_content/AL.UI",
       "RelativePath": "uploads/6288fb07-df6f-4c61-bd53-4333a2368852_imagenMuestra.jpg",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\6288fb07-df6f-4c61-bd53-4333a2368852_imagenMuestra.jpg"
     },
     {
-      "Identity": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\uploads\\8295e7fb-5ddf-4b89-b24f-680b3a5825d2_imagenMuestra.jpg",
+      "Identity": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\uploads\\8295e7fb-5ddf-4b89-b24f-680b3a5825d2_imagenMuestra.jpg",
       "SourceId": "AL.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\",
       "BasePath": "_content/AL.UI",
       "RelativePath": "uploads/8295e7fb-5ddf-4b89-b24f-680b3a5825d2_imagenMuestra.jpg",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\8295e7fb-5ddf-4b89-b24f-680b3a5825d2_imagenMuestra.jpg"
     },
     {
-      "Identity": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\uploads\\cde8cda4-55f7-4448-a13a-28b7df77b418_imagenMuestra.jpg",
+      "Identity": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\uploads\\cde8cda4-55f7-4448-a13a-28b7df77b418_imagenMuestra.jpg",
       "SourceId": "AL.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\",
       "BasePath": "_content/AL.UI",
       "RelativePath": "uploads/cde8cda4-55f7-4448-a13a-28b7df77b418_imagenMuestra.jpg",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\cde8cda4-55f7-4448-a13a-28b7df77b418_imagenMuestra.jpg"
     },
     {
-      "Identity": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\uploads\\e4f4dab9-0a15-439e-bf31-e20e01e77f41_casa.jpg",
+      "Identity": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\uploads\\e4f4dab9-0a15-439e-bf31-e20e01e77f41_casa.jpg",
       "SourceId": "AL.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\",
       "BasePath": "_content/AL.UI",
       "RelativePath": "uploads/e4f4dab9-0a15-439e-bf31-e20e01e77f41_casa.jpg",
       "AssetKind": "All",

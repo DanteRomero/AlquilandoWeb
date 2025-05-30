@@ -396,7 +396,10 @@
       },
       "AL.Aplicacion/1.0.0": {
         "runtime": {
-          "AL.Aplicacion.dll": {}
+          "AL.Aplicacion.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

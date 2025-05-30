@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AL.Aplicacion
-build_property.ProjectDir = C:\Users\CONSU\proyectoIS2\AL\AL.Aplicacion\
+build_property.ProjectDir = c:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb\AL.Aplicacion\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

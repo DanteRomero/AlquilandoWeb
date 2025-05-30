@@ -8,7 +8,7 @@ public class AlojamientoValidador(IAlojamientoRepositorio _alojamientoRepo):IAlo
 {
     public bool Validar(Alojamiento a, out string mensajeError){
         mensajeError = "";
-        if (_alojamientoRepo.ObtenerPorNombre(a.Nombre) != null)
+        if (_alojamientoRepo.ObtenerPorNombre(a.Nombre) != null && _alojamientoRepo.ObtenerPorNombre(a.Nombre).Id != a.Id)
         {
             mensajeError = "El nombre del alojamiento ingresado ya fue dado de alta anteriormente.";
         }

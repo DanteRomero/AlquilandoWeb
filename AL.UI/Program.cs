@@ -14,6 +14,8 @@ EntidadesSqlite.Inicializar();
 builder.Services.AddTransient<UsuarioAlta>();
 builder.Services.AddTransient<AlojamientoAlta>();
 builder.Services.AddTransient<BuscarAlojamientoCasoDeUso>();
+builder.Services.AddScoped<AlojamientoEdicion>();
+builder.Services.AddScoped<CancelarReservaCasoDeUso>();
 
 builder.Services.AddSingleton<IUsuarioRepositorio, UsuarioRepositorio>();
 builder.Services.AddSingleton<ITarjetaRepositorio, TarjetaRepositorio>();
@@ -25,7 +27,7 @@ builder.Services.AddTransient<IAlojamientoValidador, AlojamientoValidador>();
 
 builder.Services.AddTransient<IHashService, HashService>();
 builder.Services.AddScoped<IServicioSesion, ServicioSesion>();
-
+builder.Services.AddScoped<ServicioReserva>();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()

@@ -1,51 +1,51 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AL.UI.bundle.scp.css",
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AL.UI.bundle.scp.css",
       "PackagePath": "staticwebassets\\AL.UI.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\app.css",
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\logo.jpg",
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\logo.jpg",
       "PackagePath": "staticwebassets\\logo.jpg"
     },
     {
-      "Id": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\uploads\\06ccb595-355e-48ad-814a-b84093b46704_imagenMuestra.jpg",
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\uploads\\06ccb595-355e-48ad-814a-b84093b46704_imagenMuestra.jpg",
       "PackagePath": "staticwebassets\\uploads\\06ccb595-355e-48ad-814a-b84093b46704_imagenMuestra.jpg"
     },
     {
-      "Id": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\uploads\\08193649-8e0a-4c93-910d-a587df2fe1b0_imagenMuestra.jpg",
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\uploads\\08193649-8e0a-4c93-910d-a587df2fe1b0_imagenMuestra.jpg",
       "PackagePath": "staticwebassets\\uploads\\08193649-8e0a-4c93-910d-a587df2fe1b0_imagenMuestra.jpg"
     },
     {
-      "Id": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\uploads\\6288fb07-df6f-4c61-bd53-4333a2368852_imagenMuestra.jpg",
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\uploads\\6288fb07-df6f-4c61-bd53-4333a2368852_imagenMuestra.jpg",
       "PackagePath": "staticwebassets\\uploads\\6288fb07-df6f-4c61-bd53-4333a2368852_imagenMuestra.jpg"
     },
     {
-      "Id": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\uploads\\8295e7fb-5ddf-4b89-b24f-680b3a5825d2_imagenMuestra.jpg",
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\uploads\\8295e7fb-5ddf-4b89-b24f-680b3a5825d2_imagenMuestra.jpg",
       "PackagePath": "staticwebassets\\uploads\\8295e7fb-5ddf-4b89-b24f-680b3a5825d2_imagenMuestra.jpg"
     },
     {
-      "Id": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\uploads\\cde8cda4-55f7-4448-a13a-28b7df77b418_imagenMuestra.jpg",
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\uploads\\cde8cda4-55f7-4448-a13a-28b7df77b418_imagenMuestra.jpg",
       "PackagePath": "staticwebassets\\uploads\\cde8cda4-55f7-4448-a13a-28b7df77b418_imagenMuestra.jpg"
     },
     {
-      "Id": "C:\\Users\\CONSU\\proyectoIS2\\AL\\AL.UI\\wwwroot\\uploads\\e4f4dab9-0a15-439e-bf31-e20e01e77f41_casa.jpg",
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb\\AL.UI\\wwwroot\\uploads\\e4f4dab9-0a15-439e-bf31-e20e01e77f41_casa.jpg",
       "PackagePath": "staticwebassets\\uploads\\e4f4dab9-0a15-439e-bf31-e20e01e77f41_casa.jpg"
     },
     {
