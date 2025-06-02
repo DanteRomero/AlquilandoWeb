@@ -1,0 +1,49 @@
+﻿@page "/CuentaAdministrador"
+@inject IServicioSesion ServicioSesion
+@inject NavigationManager NavigationManager
+
+<h3>Cuenta Administrador</h3>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Publicar Alojamiento</h5>
+        <p class="card-text">Agrega un nuevo alojamiento a la plataforma.</p>
+        <a href="/PublicarAlojamiento" class="btn btn-primary">Ir</a>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Listar Publicaciones</h5>
+        <p class="card-text">Puede ver la lista de alojamientos y editarlos.</p>
+        <a href="/alojamientos" class="btn btn-primary">Ir</a>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Filtrar Alojamientos</h5>
+        <p class="card-text">Busca alojamientos según tus preferencias.</p>
+        <a href="/FiltrarAlojamiento" class="btn btn-primary">Ir</a>
+    </div>
+</div>
+
+@code {
+    private bool _usuarioInicializado = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !_usuarioInicializado)
+        {
+            await ServicioSesion.InicializarUsuarioAsync();
+            _usuarioInicializado = true;
+
+            if (ServicioSesion.Rol != RolUsuario.Administrador)
+            {
+                NavigationManager.NavigateTo("/", true);
+            }
+
+            StateHasChanged(); // Refresca la UI si es necesario
+        }
+    }
+}

@@ -1,0 +1,83 @@
+﻿@page "/buscar"
+@rendermode InteractiveServer
+@inject BuscarAlojamientoCasoDeUso BuscarAlojamientoUseCase
+
+<div class="container mt-5" style="max-width: 500px;">
+    <h2 class="fw-bold mb-2">Alquileres vacacionales en casas</h2>
+    <p class="text-muted mb-4">Busca y reserva casas únicas en tu destino</p>
+
+    <div class="card p-4 shadow-sm border-0 rounded-4">
+        <div class="mb-3">
+            <label class="form-label text-uppercase fw-bold small">Ubicación</label>
+            <input type="text" class="form-control rounded-3" placeholder="Ej: La Plata, Argentina" @bind="ciudad" />
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label class="form-label text-uppercase fw-bold small">Llegada</label>
+                <input type="date" class="form-control rounded-3" @bind="FechaDesde" />
+            </div>
+            <div class="col">
+                <label class="form-label text-uppercase fw-bold small">Salida</label>
+                <input type="date" class="form-control rounded-3" @bind="FechaHasta" />
+            </div>
+        </div>
+
+        <button @onclick="Buscar" class="btn btn-primary">Buscar </button>
+    </div>
+
+    @if (Resultados == null)
+    {
+        //<div class="alert alert-danger mt-3">@ErrorMensaje</div>
+    }
+    else if (!Resultados.Any())
+    {
+        <h4>No hay coincidencias</h4>
+    }
+    else{
+            <h4 class="mt-5">Alojamientos encontrados:</h4>
+            <div class="list-group">
+                @foreach (var alojamiento in Resultados)
+                {
+                    <div class="list-group-item mb-3 rounded-3 shadow-sm">
+                        <h5 class="fw-semibold">@alojamiento.Nombre</h5>
+                        <p class="mb-1 text-muted">@alojamiento.Ciudad - @alojamiento.Direccion</p>
+                        <p class="mb-1">Capacidad: @alojamiento.CapacidadMaxima </p>
+                        <p class="mb-1">Precio por noche: $@alojamiento.PrecioPorNoche</p>
+                    </div>
+                }
+            </div>
+    }
+</div>
+
+@code {
+    private string ciudad = "";
+    private DateTime FechaDesde = DateTime.Today;
+    private DateTime FechaHasta =DateTime.Today.AddDays(1);
+    private List<Alojamiento>? Resultados = null!;
+    private string? ErrorMensaje=null!;
+
+    private void Buscar()
+    {
+        try
+        {
+            Resultados = BuscarAlojamientoUseCase.Ejecutar(ciudad, FechaDesde, FechaHasta);
+        }
+        catch (ArgumentException ex)
+        {
+            ErrorMensaje = ex.Message;
+             Resultados = new List<Alojamiento>();
+        }
+        catch (NullReferenceException)
+        {
+            Resultados = new List<Alojamiento>();
+        }
+        catch (Exception)
+        {
+            ErrorMensaje = "Ocurrió un error inesperado. Intenta nuevamente.";
+            Resultados = new List<Alojamiento>();
+        }
+        StateHasChanged();
+        
+    }
+}

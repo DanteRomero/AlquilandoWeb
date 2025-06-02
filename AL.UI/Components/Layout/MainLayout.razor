@@ -1,0 +1,39 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <div class="sidebar text-white"
+        style="background: url('/imagenes/departamentoA.jpg') center center / cover no-repeat; height: 100vh;">
+        <div class="sidebar-overlay d-flex flex-column h-100">
+            <!-- Encabezado con logo -->
+            <div class="d-flex align-items-center justify-content-center mb-4">
+                <img src="logo.jpg" alt="Logo"
+                    style="width: 40px; height: 40px; object-fit: contain; margin-right: 10px;" />
+                <h3 class="m-0">AlquilandoWeb</h3>
+            </div>
+
+            <!-- Navegación -->
+            <nav class="nav flex-column mb-4">
+                <NavLink class="nav-link text-white" href="">🏠 Inicio</NavLink>
+                <NavLink class="nav-link text-white" href="">🔍 Buscar</NavLink>
+            </nav>
+        </div>
+    </div>
+
+
+    <main>
+        <div class="top-row px-4">
+            <a href="/Registrarse" class="ms-3" target="_blank">Registrarse</a>
+            <a href="/IniciarSesion" class="ms-3">Iniciar sesión</a>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>

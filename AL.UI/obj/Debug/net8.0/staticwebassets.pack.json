@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AL.UI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AL.UI.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\alquilando.png",
+      "PackagePath": "staticwebassets\\alquilando.png"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\imagenes\\departamentoA.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\departamentoA.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\imagenes\\departamentoB.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\departamentoB.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\imagenes\\departamentoC.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\departamentoC.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\logo.jpg",
+      "PackagePath": "staticwebassets\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\uploads\\b6283a65-d4fd-48c9-8f55-b6e6751741c2_pieza1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b6283a65-d4fd-48c9-8f55-b6e6751741c2_pieza1.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AL.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AL.UI.props",
+      "PackagePath": "build\\AL.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AL.UI.props",
+      "PackagePath": "buildMultiTargeting\\AL.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AL.UI.props",
+      "PackagePath": "buildTransitive\\AL.UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

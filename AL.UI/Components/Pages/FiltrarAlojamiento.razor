@@ -1,0 +1,174 @@
+﻿@page "/FiltrarAlojamiento"
+@using AL.Aplicacion.Excepciones
+@using AL.Aplicacion.Entidades
+@rendermode InteractiveServer
+
+@inject FiltrarAlojamientoCasoDeUso FiltrarAlojamientoCasoDeUso
+
+<h3>Filtrar por</h3>
+
+<div class="row g-2 align-items-end mb-3">
+    <div class="col-md-3">
+        <label class="form-label">Tipo de filtro</label>
+        <select class="form-select" @bind="filtroSeleccionado">
+            <option disabled selected value="">Seleccionar...</option>
+            <option value="Pais">País</option>
+            <option value="Ciudad">Ciudad</option>
+            <option value="PrecioMinimo">Precio Mínimo</option>
+            <option value="PrecioMaximo">Precio Máximo</option>
+            <option value="CantidadDormitorios">Dormitorios</option>
+            <option value="Capacidad">Capacidad</option>
+            <option value="Estacionamiento">Estacionamiento</option>
+        </select>
+    </div>
+
+    <div class="col-md-4">
+        @if (filtroSeleccionado == "Estacionamiento")
+        {
+            <div class="form-check mt-4">
+                <input type="checkbox" class="form-check-input" @bind="valorBooleano" />
+                <label class="form-check-label">¿Con estacionamiento?</label>
+            </div>
+        }
+        else
+        {
+            <input class="form-control mt-2" placeholder="Valor del filtro" @bind="valorFiltro" />
+        }
+    </div>
+
+    <div class="col-md-2">
+        <button class="btn btn-secondary" @onclick="AgregarFiltro"
+            disabled="@string.IsNullOrEmpty(filtroSeleccionado)">+ Agregar filtro</button>
+    </div>
+</div>
+
+@if (filtrosAplicados.Any())
+{
+    <h5 class="mt-3">Filtros aplicados:</h5>
+    <ul class="list-group mb-3">
+        @foreach (var f in filtrosAplicados)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                @f.Key: @f.Value
+                <button class="btn btn-sm btn-outline-danger" @onclick="@(() => RemoverFiltro(f.Key))">❌</button>
+            </li>
+        }
+    </ul>
+
+    <button class="btn btn-primary" @onclick="AplicarFiltros">Aplicar filtros</button>
+}
+
+@if (!string.IsNullOrEmpty(ErrorMessage))
+{
+    <div class="alert alert-danger mt-3">@ErrorMessage</div>
+}
+
+@if (alojamientos?.Any() == true)
+{
+    <h4 class="mt-4">Resultados</h4>
+    <div class="row">
+        @foreach (var a in alojamientos)
+        {
+            <div class="card m-2 p-2 col-md-4" style="cursor: pointer;" @onclick="() => IrADetalle(a.Id)">
+                <h5>@a.Nombre</h5>
+                <p>@a.Ciudad, @a.Pais</p>
+                <p>Precio: $@a.PrecioPorNoche por noche</p>
+                <p>Dormitorios: @a.CantidadDormitorios | Capacidad: @a.CapacidadMaxima</p>
+                <p>@(a.Estacionamiento ? "Con estacionamiento" : "Sin estacionamiento")</p>
+            </div>
+        }
+
+    </div>
+}
+else if (buscado && alojamientos?.Count == 0)
+{
+    <p class="text-muted mt-3">No se encontraron alojamientos con esos criterios.</p>
+}
+
+@code {
+    private string? filtroSeleccionado;
+    private string? valorFiltro;
+    private bool valorBooleano;
+    private Dictionary<string, string> filtrosAplicados = new();
+    private Filtro filtro = new();
+    private List<Alojamiento>? alojamientos;
+    private string? ErrorMessage;
+    private bool buscado = false;
+
+    private void AgregarFiltro()
+    {
+        if (string.IsNullOrEmpty(filtroSeleccionado))
+            return; // No agregar si no hay filtro seleccionado
+
+        if (filtroSeleccionado == "Estacionamiento")
+        {
+            filtrosAplicados[filtroSeleccionado] = valorBooleano ? "Sí" : "No";
+        }
+        else if (!string.IsNullOrEmpty(valorFiltro))
+        {
+            filtrosAplicados[filtroSeleccionado] = valorFiltro!;
+        }
+
+        // Limpiar selección
+        filtroSeleccionado = null;
+        valorFiltro = null;
+        valorBooleano = false;
+    }
+
+    private void RemoverFiltro(string key)
+    {
+        filtrosAplicados.Remove(key);
+    }
+
+    private void AplicarFiltros()
+    {
+        ErrorMessage = null;
+
+        filtro = new Filtro(); // Reset
+        foreach (var f in filtrosAplicados)
+        {
+            switch (f.Key)
+            {
+                case "Pais":
+                    filtro.Pais = f.Value;
+                    break;
+                case "Ciudad":
+                    filtro.Ciudad = f.Value;
+                    break;
+                case "PrecioMinimo":
+                    filtro.PrecioMinimo = int.TryParse(f.Value, out var min) ? min : 0;
+                    break;
+                case "PrecioMaximo":
+                    filtro.PrecioMaximo = int.TryParse(f.Value, out var max) ? max : 0;
+                    break;
+                case "CantidadDormitorios":
+                    filtro.CantidadDormitorios = int.TryParse(f.Value, out var dor) ? dor : 0;
+                    break;
+                case "Capacidad":
+                    filtro.Capacidad = int.TryParse(f.Value, out var cap) ? cap : 0;
+                    break;
+                case "Estacionamiento":
+                    filtro.Estacionamiento = f.Value == "Sí";
+                    break;
+            }
+        }
+
+        try
+        {
+            alojamientos = FiltrarAlojamientoCasoDeUso.Ejecutar(filtro);
+        }
+        catch (FiltroException ex)
+        {
+            alojamientos = new List<Alojamiento>();
+            ErrorMessage = ex.Message;
+        }
+
+        buscado = true;
+    }
+    @inject NavigationManager Navigation
+
+    private void IrADetalle(int id)
+    {
+        Navigation.NavigateTo($"/alojamiento/{id}");
+    }
+}

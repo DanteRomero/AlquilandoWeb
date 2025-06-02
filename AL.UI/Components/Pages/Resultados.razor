@@ -1,0 +1,62 @@
+﻿@page "/resultados"
+@rendermode InteractiveServer
+@inject IAlojamientoRepositorio AlojamientoRepositorio
+@inject NavigationManager Navigation
+
+<PageTitle>Resultados de Búsqueda</PageTitle>
+
+<h3>Resultados para "@ciudad" entre @desde?.ToShortDateString() y @hasta?.ToShortDateString()</h3>
+
+@if (alojamientos == null)
+{
+    <p>Cargando alojamientos...</p>
+}
+else if (!alojamientos.Any())
+{
+    <p>No hay coincidencias</p>
+}
+else
+{
+    <div class="row">
+        @foreach (var alojamiento in alojamientos)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="@(alojamiento.Imagenes.FirstOrDefault() ?? "imagenes/default-image.jpg")" class="card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title">@alojamiento.Nombre</h5>
+                        <p class="card-text">@alojamiento.Ciudad</p>
+                        <button class="btn btn-primary" @onclick="@(() => VerDetalle(alojamiento.Id))">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    [Parameter] public string? ciudad {get  ; set;}
+    [Parameter] public DateTime? desde{ get; set; }
+    [Parameter] public DateTime? hasta {get;set;}
+    private List<Alojamiento> alojamientos = new();
+
+    protected override void OnInitialized()
+    {
+        var uri = Navigation.ToAbsoluteUri(Navigation.Uri);
+        var query = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query);
+
+        ciudad = query["ciudad"];
+        desde = DateTime.TryParse(query["desde"], out var d) ? d : (DateTime?)null;
+        hasta = DateTime.TryParse(query["hasta"], out var h) ? h : (DateTime?)null;
+
+        if (!string.IsNullOrWhiteSpace(ciudad) && desde.HasValue && hasta.HasValue)
+        {
+            alojamientos = AlojamientoRepositorio.ObtenerPorCiudadYDisponibilidad(ciudad, desde.Value, hasta.Value);
+        }
+    }
+
+    void VerDetalle(int id)
+    {
+        Navigation.NavigateTo($"/DetalleAlojamiento/{id}");
+    }
+}
