@@ -29,12 +29,14 @@ else
         <!-- Especificaciones a la derecha -->
         <div class="col-md-5">
             <div class="card p-4 shadow-sm border-0 rounded-4">
+                <p class="mb-1"><strong>País:</strong> @alojamiento.Pais</p>
                 <p class="mb-1"><strong>Ciudad:</strong> @alojamiento.Ciudad</p>
                 <p class="mb-1"><strong>Dirección:</strong> @alojamiento.Direccion</p>
                 <p class="mb-1"><strong>Capacidad máxima:</strong> @alojamiento.CapacidadMaxima</p>
                 <p class="mb-1"><strong>Dormitorios:</strong> @alojamiento.CantidadDormitorios</p>
                 <p class="mb-1"><strong>Camas:</strong> @alojamiento.CantidadCamas</p>
                 <p class="mb-1"><strong>Baños:</strong> @alojamiento.CantidadBaños</p>
+                <p class="mb-1"><strong>Estacionamiento:</strong> @(alojamiento.Estacionamiento ? "Sí" : "No")</p>
                 <p class="mb-3"><strong>Precio por noche:</strong> $@alojamiento.PrecioPorNoche</p>
 
                 <p class="text-muted">@alojamiento.Descripcion</p>

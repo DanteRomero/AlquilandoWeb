@@ -29,3 +29,4 @@ C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-main\AL.Repositorios\obj\D
 C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-main\AL.Repositorios\obj\Debug\net8.0\refint\AL.Repositorios.dll
 C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-main\AL.Repositorios\obj\Debug\net8.0\AL.Repositorios.pdb
 C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-main\AL.Repositorios\obj\Debug\net8.0\ref\AL.Repositorios.dll
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-main\AL.Repositorios\obj\Debug\net8.0\AL.Repositorios.sourcelink.json

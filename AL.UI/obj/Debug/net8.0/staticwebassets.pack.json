@@ -45,8 +45,28 @@
       "PackagePath": "staticwebassets\\logo.jpg"
     },
     {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\uploads\\1c48de71-3bea-4ee6-a65b-2ed2403056ad_baño1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1c48de71-3bea-4ee6-a65b-2ed2403056ad_baño1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\uploads\\20c2bfa9-09a6-4332-8f07-49f1e58ad68b_baño1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\20c2bfa9-09a6-4332-8f07-49f1e58ad68b_baño1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\uploads\\9e2c8409-0e2d-403d-9fc0-fd56b9cc58dd_Living.jpg",
+      "PackagePath": "staticwebassets\\uploads\\9e2c8409-0e2d-403d-9fc0-fd56b9cc58dd_Living.jpg"
+    },
+    {
       "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\uploads\\b6283a65-d4fd-48c9-8f55-b6e6751741c2_pieza1.jpg",
       "PackagePath": "staticwebassets\\uploads\\b6283a65-d4fd-48c9-8f55-b6e6751741c2_pieza1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\uploads\\cf0a6b70-109f-4112-8e03-b0e08b0fab41_Living.jpg",
+      "PackagePath": "staticwebassets\\uploads\\cf0a6b70-109f-4112-8e03-b0e08b0fab41_Living.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-main\\AL.UI\\wwwroot\\uploads\\e0e40b49-2760-4f1d-970a-986e5ea13e90_logo_alquilando.png",
+      "PackagePath": "staticwebassets\\uploads\\e0e40b49-2760-4f1d-970a-986e5ea13e90_logo_alquilando.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AL.UI.Microsoft.AspNetCore.StaticWebAssets.props",

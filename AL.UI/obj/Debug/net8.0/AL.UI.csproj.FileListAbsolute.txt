@@ -203,3 +203,4 @@ C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-main\AL.UI\obj\Debug\net8.
 C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-main\AL.UI\obj\Debug\net8.0\AL.UI.pdb
 C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-main\AL.UI\obj\Debug\net8.0\AL.UI.genruntimeconfig.cache
 C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-main\AL.UI\obj\Debug\net8.0\ref\AL.UI.dll
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-main\AL.UI\obj\Debug\net8.0\AL.UI.sourcelink.json
