@@ -1,0 +1,46 @@
+@page "/usuarios"
+@inject IUsuarioRepositorio repoUsuario
+<h3>Lista de Usuarios</h3>
+@if (usuarios == null)
+{
+    <p>Cargando usuarios...</p>
+}
+else if (!usuarios.Any())
+{
+    <p>No hay usuarios registrados.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Fecha de Nacimiento</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var usuario in usuarios)
+            {
+                <tr>
+                    <td>@usuario.Id</td>
+                    <td>@usuario.Nombre</td>
+                    <td>@usuario.Apellido</td>
+                    <td>@usuario.CorreoElectronico</td>
+                    <td>@usuario.FechaDeNacimiento</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Usuario> usuarios;
+
+    protected override void OnInitialized()
+    {
+        usuarios = repoUsuario.ListarTodos();
+    }
+}
