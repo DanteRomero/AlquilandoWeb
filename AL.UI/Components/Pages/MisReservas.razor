@@ -1,0 +1,116 @@
+﻿@page "/misreservas"
+
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+@inject CancelarReservaCasoDeUso cancelarReservaUseCase
+@inject IServicioSesion ServicioSesion
+@inject IReservasRepositorio ReservasRepositorio
+@inject IUsuarioRepositorio UsuarioRepositorio
+@inject ITarjetaRepositorio TarjetaRepositorio
+
+
+<h3>Datos personales</h3>
+@if (_usuario == null)
+{
+    <p><em>Cargando...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Correo electrónico</th>
+                <th>Tarjeta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                    <td>@_usuario.Nombre</td>
+                    <td>@_usuario.Apellido</td>
+                    <th>@_usuario.FechaDeNacimiento</th>
+                    <td>@_usuario.CorreoElectronico</td>
+                    <td>@_numeroTarjeta</td>
+            </tr>
+        </tbody>
+    </table>
+}
+
+<h3>Mis Reservas</h3>
+@if (rol != RolUsuario.Usuario )
+{
+    //<p>Debes iniciar sesión para ver tus reservas.</p>
+}
+else if (reservas.Count == 0)
+{
+    <p>No tenés reservas.</p>
+}
+else
+{
+    @foreach (var reserva in reservas)
+    {
+        <div class="card p-2 my-2">
+            <div class="d-flex justify-content-between align-items-start">
+                <div> 
+                    <p>Alojamiento: @reserva.IdAlojamiento</p>
+                    <p>Desde: @reserva.FechaInicioEstadia.ToShortDateString()</p>
+                    <p>Hasta: @reserva.FechaFinEstadia.ToShortDateString()</p>
+                    <p>Monto: $@reserva.MontoEstadia</p>
+                </div>
+                <span class="badge bg-secondary fs-6">@reserva.EstadoReserva</span>
+            </div>
+            @if (reserva.FechaInicioEstadia > DateTime.Now)
+            {
+                <div class="d-flex justify-content-end align-items-end mt-2" style="height: 40px;">
+                    <button class="btn btn-danger rounded-0 px-4 py-2" style="min-width: 80px;" @onclick="() => Cancelar(reserva.Id)">
+                        Cancelar
+                    </button>
+                </div>
+            }
+        </div>
+    }
+}
+
+@code {
+
+    public RolUsuario rol => ServicioSesion.Rol;
+    public int usuario_Actual => ServicioSesion.Id;
+    private List<Reserva> reservas = new();
+    private bool _usuarioInicializado = false;
+    Usuario _usuario = new Usuario();
+    String _numeroTarjeta = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        ServicioSesion.IniciarSesion();
+        StateHasChanged();
+    }
+    
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !_usuarioInicializado)
+        {
+            await ServicioSesion.InicializarUsuarioAsync();
+            _usuarioInicializado = true;
+
+            var usuario = UsuarioRepositorio.ObtenerPorId(ServicioSesion.Id);
+            if (usuario != null)
+            {
+                _usuario = usuario;
+                _numeroTarjeta = TarjetaRepositorio.ObtenerPorIdUltimosCuatro(usuario.TarjetaId);
+            }
+            reservas = cancelarReservaUseCase.ObtenerMisReservas();
+            StateHasChanged();
+        }
+    }
+
+    private void Cancelar(int idReserva)
+    {
+        var mensaje = cancelarReservaUseCase.CancelarReserva(idReserva);
+        Console.WriteLine(mensaje);
+        OnInitialized();
+    }
+
+}

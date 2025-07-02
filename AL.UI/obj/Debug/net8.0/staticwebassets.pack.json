@@ -1,0 +1,105 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AL.UI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AL.UI.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\alquilando.png",
+      "PackagePath": "staticwebassets\\alquilando.png"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\imagenes\\departamentoA.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\departamentoA.jpg"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\imagenes\\departamentoB.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\departamentoB.jpg"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\imagenes\\departamentoC.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\departamentoC.jpg"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\imagenes\\reservas\\4366b143-1cd7-4283-9052-8701b2dc9aee_Captura de pantalla 2025-02-06 180827.png",
+      "PackagePath": "staticwebassets\\imagenes\\reservas\\4366b143-1cd7-4283-9052-8701b2dc9aee_Captura de pantalla 2025-02-06 180827.png"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\imagenes\\reservas\\cbbd2edc-57a1-4359-9fd2-bc0a32587866_Captura de pantalla 2025-02-06 180301.png",
+      "PackagePath": "staticwebassets\\imagenes\\reservas\\cbbd2edc-57a1-4359-9fd2-bc0a32587866_Captura de pantalla 2025-02-06 180301.png"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\imagenes\\reservas\\f6ed998b-ac2e-40ba-b3a7-220ff70b3a23_Captura de pantalla 2025-06-05 154205.png",
+      "PackagePath": "staticwebassets\\imagenes\\reservas\\f6ed998b-ac2e-40ba-b3a7-220ff70b3a23_Captura de pantalla 2025-06-05 154205.png"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\imagenes\\reservas\\f74e54b0-5598-4546-8630-b75bd4be6b03_Captura de pantalla 2025-01-15 153613.png",
+      "PackagePath": "staticwebassets\\imagenes\\reservas\\f74e54b0-5598-4546-8630-b75bd4be6b03_Captura de pantalla 2025-01-15 153613.png"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\logo.jpg",
+      "PackagePath": "staticwebassets\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\site.js",
+      "PackagePath": "staticwebassets\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\uploads\\2c0ed0e8-e53e-44dc-9fbf-ad8ee6177b03_favicon.png",
+      "PackagePath": "staticwebassets\\uploads\\2c0ed0e8-e53e-44dc-9fbf-ad8ee6177b03_favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\uploads\\3d9af915-eb96-4b2f-80ed-44418671ea75_Apartamento CABA.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\3d9af915-eb96-4b2f-80ed-44418671ea75_Apartamento CABA.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\uploads\\7bfb0e3d-ecc9-43be-a850-4bf1813cf425_Captura de pantalla 2025-02-25 184503.png",
+      "PackagePath": "staticwebassets\\uploads\\7bfb0e3d-ecc9-43be-a850-4bf1813cf425_Captura de pantalla 2025-02-25 184503.png"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\uploads\\b28dede9-e993-4c9a-895d-f700ed880fdb_Apartamento CABA.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\b28dede9-e993-4c9a-895d-f700ed880fdb_Apartamento CABA.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\al.ui\\wwwroot\\uploads\\f595945a-0eaf-4c62-9d1e-de86c547f4d9_imagenMuestra.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f595945a-0eaf-4c62-9d1e-de86c547f4d9_imagenMuestra.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AL.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AL.UI.props",
+      "PackagePath": "build\\AL.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AL.UI.props",
+      "PackagePath": "buildMultiTargeting\\AL.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AL.UI.props",
+      "PackagePath": "buildTransitive\\AL.UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

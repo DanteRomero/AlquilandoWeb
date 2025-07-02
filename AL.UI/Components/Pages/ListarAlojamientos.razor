@@ -1,0 +1,84 @@
+﻿@page "/alojamientos"
+@layout AL.UI.Components.Layout.AdminLayout
+@rendermode InteractiveServer
+@inject IAlojamientoRepositorio AlojamientoRepositorio
+@inject NavigationManager NavigationManager
+@inject IServicioSesion ServicioSesion
+
+<button @onclick="VolverAtras" class="btn btn-primary">Volver</button>
+
+<h3>Alojamientos Publicados</h3>
+
+@if (_alojamientos is null)
+{
+    <p>Cargando alojamientos...</p>
+}
+else if (!_alojamientos.Any())
+{
+    <p>No hay alojamientos publicados.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Ciudad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var alojamiento in _alojamientos)
+            {
+                <tr>
+                    <td>@alojamiento.Nombre</td>
+                    <td>@alojamiento.Ciudad</td>
+                    <td>
+                        @if ( ServicioSesion.Rol == RolUsuario.Administrador)
+                        {
+                            <div class="card" style="width: 10rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Editar</h5>
+                                    <a href="/editar-alojamiento/@alojamiento.Id" class="btn btn-warning btn-sm">Ir</a>
+                                </div>
+                            </div>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private RolUsuario rol => ServicioSesion.Rol;
+    List<Alojamiento>? _alojamientos= new();
+    private bool _usuarioInicializado = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !_usuarioInicializado)
+        {
+            await ServicioSesion.InicializarUsuarioAsync();
+            _usuarioInicializado = true;
+            _alojamientos = AlojamientoRepositorio.ObtenerTodos();
+            
+            StateHasChanged(); // Refresca la UI si es necesario
+        }
+    }
+    /*
+    protected override async Task OnInitializedAsync()
+    {
+      _alojamientos = AlojamientoRepositorio.ObtenerTodos();
+    }
+*/
+    void EditarAlojamiento(int id)
+    {
+        Console.WriteLine($"Redirigiendo a editar alojamiento con ID: {id}");
+        NavigationManager.NavigateTo($"/alojamiento/editar/{id}");
+    }
+    void VolverAtras()
+    {
+      NavigationManager.NavigateTo("/CuentaAdministrador");
+    }
+}
