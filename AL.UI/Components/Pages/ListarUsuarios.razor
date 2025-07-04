@@ -18,41 +18,71 @@
 }
 else if (!servicioSesion.SesionIniciada)
 {
-    <p>No hay sesión iniciada. Inicie sesión para acceder.</p>
+    <p class="text-danger">Debe iniciar sesión para acceder a esta sección.</p>
 }
 else if (servicioSesion.Rol == RolUsuario.Administrador || servicioSesion.Rol == RolUsuario.Encargado)
 {
+    <!-- Bloque de filtros -->
     <div class="mb-3">
-        <label class="form-label">Reservas realizadas en los últimos (meses):</label>
-        <InputNumber @bind-Value="cantidadMeses" class="form-control" />
-        <button class="btn btn-primary mt-2" @onclick="FiltrarUsuarios">Aplicar Filtro</button>
+        <label class="form-label">Tipo de filtro:</label>
+        <select @bind="filtroSeleccionado" class="form-select">
+            <option value="">Seleccionar...</option>
+            <option value="ReservasUltimosMeses">Reservas en los últimos meses</option>
+            <option value="Nombre">Nombre</option>
+            <option value="Apellido">Apellido</option>
+            <!-- Aca despues podes agregar mes opciones -->
+        </select>
+
+        @if (filtroSeleccionado == "ReservasUltimosMeses")
+        {
+            <div class="mt-2">
+                <label class="form-label">Meses:</label>
+                <InputNumber @bind-Value="cantidadMeses" class="form-control" />
+            </div>
+        }
+        else if (filtroSeleccionado == "Nombre" || filtroSeleccionado == "Apellido")
+        {
+            <div class="mt-2">
+                <label class="form-label">Valor:</label>
+                <InputText @bind-Value="valorFiltroTexto" class="form-control" />
+            </div>
+        }
+
+        <button class="btn btn-primary mt-3" @onclick="AplicarFiltro">Aplicar Filtro</button>
     </div>
 
+    <!-- Mostrar resultados -->
     @if (usuariosFiltrados != null)
     {
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Email</th>
-                    <th>Reservas Realizadas</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var u in usuariosFiltrados)
-                {
+        @if (usuariosFiltrados.Count == 0)
+        {
+            <div class="alert alert-warning">
+                No se encontraron resultados que coincidan con los criterios de búsqueda.
+            </div>
+        }
+        else
+        {
+            <table class="table">
+                <thead>
                     <tr>
-                        <td>@u.Id</td>
-                        <td>@u.Nombre</td>
-                        <td>@u.Apellido</td>
-                        <td>@u.CorreoElectronico</td>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var u in usuariosFiltrados)
+                    {
+                        <tr>
+                            <td>@u.Id</td>
+                            <td>@u.Nombre</td>
+                            <td>@u.CorreoElectronico</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
     }
-    
 }
 else
 {
@@ -64,10 +94,11 @@ else
     private List<Usuario> usuariosFiltrados;
     private bool sesionInicializada = false;
     private string errorSesion = null;
+    private string filtroSeleccionado = "";
+    private string valorFiltroTexto = "";
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        Console.WriteLine("Entró a OnAfterRenderAsync: " + firstRender);
         if (firstRender)
         {
             // Solo inicializa si NO está en prerenderizado
@@ -89,8 +120,27 @@ else
 
 
 
-    private void FiltrarUsuarios()
+    private void AplicarFiltro()
     {
-        usuariosFiltrados = repoUsuario.ListarUsuariosConReservasEnUltimosMeses(cantidadMeses);
+        if (filtroSeleccionado == "ReservasUltimosMeses")
+        {
+            usuariosFiltrados = repoUsuario.ListarUsuariosConReservasEnUltimosMeses(cantidadMeses);
+        }
+        else if (filtroSeleccionado == "Nombre")
+        {
+            usuariosFiltrados = repoUsuario.ListarTodos()
+                .Where(u => u.Nombre.Contains(valorFiltroTexto, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
+        else if (filtroSeleccionado == "Apellido")
+        {
+            usuariosFiltrados = repoUsuario.ListarTodos()
+                .Where(u => u.Apellido.Contains(valorFiltroTexto, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
+
+        // Agregar mas if/else para otros tipos de filtros despues
     }
+
+    
 }

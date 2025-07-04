@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\AL.Repositorios\\AL.Repositorios.csproj": {}
+    "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb - Ult\\AL.Repositorios\\AL.Repositorios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\AL.Aplicacion\\AL.Aplicacion.csproj": {
+    "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb - Ult\\AL.Aplicacion\\AL.Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\AL.Aplicacion\\AL.Aplicacion.csproj",
+        "projectUniqueName": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb - Ult\\AL.Aplicacion\\AL.Aplicacion.csproj",
         "projectName": "AL.Aplicacion",
-        "projectPath": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\AL.Aplicacion\\AL.Aplicacion.csproj",
-        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\AL.Aplicacion\\obj\\",
+        "projectPath": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb - Ult\\AL.Aplicacion\\AL.Aplicacion.csproj",
+        "packagesPath": "C:\\Users\\dante\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb - Ult\\AL.Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dante\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\AL.Repositorios\\AL.Repositorios.csproj": {
+    "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb - Ult\\AL.Repositorios\\AL.Repositorios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\AL.Repositorios\\AL.Repositorios.csproj",
+        "projectUniqueName": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb - Ult\\AL.Repositorios\\AL.Repositorios.csproj",
         "projectName": "AL.Repositorios",
-        "projectPath": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\AL.Repositorios\\AL.Repositorios.csproj",
-        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\AL.Repositorios\\obj\\",
+        "projectPath": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb - Ult\\AL.Repositorios\\AL.Repositorios.csproj",
+        "packagesPath": "C:\\Users\\dante\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb - Ult\\AL.Repositorios\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dante\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -84,8 +84,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\AL.Aplicacion\\AL.Aplicacion.csproj": {
-                "projectPath": "C:\\Users\\maria\\Downloads\\AlqConsu\\AlquilandoWeb\\AL.Aplicacion\\AL.Aplicacion.csproj"
+              "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb - Ult\\AL.Aplicacion\\AL.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb - Ult\\AL.Aplicacion\\AL.Aplicacion.csproj"
               }
             }
           }
@@ -105,6 +105,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[9.0.5, )"
@@ -126,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

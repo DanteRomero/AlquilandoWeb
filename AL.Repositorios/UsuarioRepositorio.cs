@@ -108,6 +108,25 @@ public class UsuarioRepositorio : IUsuarioRepositorio
         }
     }
 
+    // Listar usuarios con reservas en los últimos meses
+    public List<Usuario> ListarUsuariosConReservasEnUltimosMeses(int cantidadMeses)
+    {
+        using (var db = new EntidadesContext())
+        {
+            var fechaLimite = DateTime.Now.AddMonths(-cantidadMeses);
 
+            var usuariosConReservas = db.Reservas
+                .Where(r => r.FechaInicioEstadia >= fechaLimite)
+                .Select(r => r.IdUsuario)
+                .Distinct()
+                .ToList();
+
+            var usuarios = db.Usuarios
+                .Where(u => usuariosConReservas.Contains(u.Id))
+                .ToList();
+
+            return usuarios;
+        }
+    }
 
 }
