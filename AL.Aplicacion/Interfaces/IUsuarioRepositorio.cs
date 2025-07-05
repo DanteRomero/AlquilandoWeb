@@ -15,4 +15,5 @@ public interface IUsuarioRepositorio
     public bool BuscarPorCorreoElectronico(string correo);
     public bool tieneReservasSolapadas(DateTime fechaInicio, DateTime fechaFin, int idUsuario);
     public List<Usuario> ListarUsuariosConReservasEnUltimosMeses(int cantidadMeses);
+    public Task AsignarDescuento (int idUsuario, int porcentaje);
 }

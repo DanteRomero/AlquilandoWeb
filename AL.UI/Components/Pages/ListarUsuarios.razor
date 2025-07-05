@@ -62,12 +62,20 @@ else if (servicioSesion.Rol == RolUsuario.Administrador || servicioSesion.Rol ==
         }
         else
         {
+            <div class="mt-4"></div>
+            <h5>Descuento</h5>
+            <div class="d-flex">
+                <InputNumber @bind-Value="descuentoPorcentaje" class="form-control w-25 me-2" />
+                <button class="btn btn-success" @onclick="AplicarDescuento">Aplicar Descuento a todos</button>
+            </div>
             <table class="table">
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Nombre</th>
+                        <th>Apellido</th>
                         <th>Email</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
@@ -76,7 +84,9 @@ else if (servicioSesion.Rol == RolUsuario.Administrador || servicioSesion.Rol ==
                         <tr>
                             <td>@u.Id</td>
                             <td>@u.Nombre</td>
+                            <td>@u.Apellido</td>
                             <td>@u.CorreoElectronico</td>
+                            
                         </tr>
                     }
                 </tbody>
@@ -96,6 +106,7 @@ else
     private string errorSesion = null;
     private string filtroSeleccionado = "";
     private string valorFiltroTexto = "";
+    private int descuentoPorcentaje = 0;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -142,5 +153,14 @@ else
         // Agregar mas if/else para otros tipos de filtros despues
     }
 
-    
+    private void AplicarDescuento()
+    {
+        foreach (var usuario in usuariosFiltrados)
+        {
+            repoUsuario.AsignarDescuento(usuario.Id, descuentoPorcentaje);
+        }
+
+        // Si querés mostrar un mensaje, podés usar algún flag o Toast
+        Console.WriteLine($"Se aplicó {descuentoPorcentaje}% de descuento a {usuariosFiltrados.Count} usuarios.");
+    }
 }

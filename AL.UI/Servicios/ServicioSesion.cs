@@ -5,7 +5,7 @@ using Microsoft.JSInterop;
 using AL.Aplicacion.Entidades;
 namespace AL.UI.Servicios;
 
-public class ServicioSesion: IServicioSesion
+public class ServicioSesion : IServicioSesion
 {
     private readonly IUsuarioRepositorio _repo;
     private readonly IHashService _hash;
@@ -13,7 +13,7 @@ public class ServicioSesion: IServicioSesion
     private readonly IJSRuntime _js;
 
 
-    public ServicioSesion(ProtectedSessionStorage sessionStorage, IUsuarioRepositorio repo, IHashService hash,IJSRuntime js)
+    public ServicioSesion(ProtectedSessionStorage sessionStorage, IUsuarioRepositorio repo, IHashService hash, IJSRuntime js)
     {
         _repo = repo;
         _hash = hash;
@@ -44,7 +44,7 @@ public class ServicioSesion: IServicioSesion
         }
         return result;
     }
-    
+
     private bool Validar(string email, string contraseña)
     {
         var usuario = _repo.IniciarSesion(email);
@@ -64,10 +64,10 @@ public class ServicioSesion: IServicioSesion
             Usuario = usuario; // Asigna el usuario actual
             return true;
         }
-        
+
         throw new Exception("La contraseña es incorrecta.");
     }
-    
+
     public void IniciarSesion()
     {
         SesionIniciada = true;
@@ -94,7 +94,7 @@ public class ServicioSesion: IServicioSesion
             Usuario = resultUsuario.Value;
         else
             Usuario = null!; // Inicializa un nuevo usuario si no hay datos guardados
-            // ACTUALIZA EL ESTADO DE SESIÓN
+                             // ACTUALIZA EL ESTADO DE SESIÓN
         SesionIniciada = Rol != RolUsuario.Invitado && Usuario != null;
         OnChange?.Invoke();
     }
@@ -109,4 +109,19 @@ public class ServicioSesion: IServicioSesion
         OnChange?.Invoke();
 
     }
+    
+    public async Task RefrescarUsuarioAsync()
+    {
+        if (SesionIniciada && Id > 0)
+        {
+            var usuarioActualizado = _repo.ObtenerPorId(Id);
+            if (usuarioActualizado != null)
+            {
+                Usuario = usuarioActualizado;
+                await GuardarUsuarioAsync(); // <-- Actualiza el almacenamiento protegido
+            }
+        }
+    }
+
+
 }

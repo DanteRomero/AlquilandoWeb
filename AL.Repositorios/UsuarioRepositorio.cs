@@ -94,7 +94,7 @@ public class UsuarioRepositorio : IUsuarioRepositorio
             return usuario;
         }
     }
-    public bool tieneReservasSolapadas(DateTime fechaDesde, DateTime fechaHasta,int idUsuario)
+    public bool tieneReservasSolapadas(DateTime fechaDesde, DateTime fechaHasta, int idUsuario)
     {
         using (var db = new EntidadesContext())
         {
@@ -128,5 +128,20 @@ public class UsuarioRepositorio : IUsuarioRepositorio
             return usuarios;
         }
     }
+    
+    public async Task AsignarDescuento(int idUsuario, int porcentaje)
+    {
+        using (var db = new EntidadesContext())
+        {
+            var usuario = db.Usuarios.SingleOrDefault(u => u.Id == idUsuario);
+            if (usuario != null)
+            {
+                usuario.DescuentoProximaReserva = porcentaje;
+                db.Usuarios.Update(usuario);
+                await db.SaveChangesAsync();
+            }
+        }
+    }
+
 
 }
