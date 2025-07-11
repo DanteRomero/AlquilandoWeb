@@ -1,0 +1,61 @@
+@page "/recuperar"
+@using Microsoft.AspNetCore.Components.Forms
+@using System.ComponentModel.DataAnnotations
+@rendermode InteractiveServer
+@inject IServicioSesion ServicioSesion
+
+<h3>Recuperar contraseña</h3>
+
+@if (!enviado)
+{
+    <EditForm Model="modelo" OnValidSubmit="VerificarEmail">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="mb-3">
+            <label>Email:</label>
+            <InputText @bind-Value="modelo.Email" class="form-control" />
+        </div>
+
+        @if (!string.IsNullOrEmpty(mensajeError))
+        {
+            <div class="alert alert-danger">@mensajeError</div>
+        }
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </EditForm>
+}
+else
+{
+    <div class="alert alert-success">
+        Revisa tu bandeja de entrada y sigue las instrucciones para crear una nueva contraseña.
+    </div>
+}
+
+@code {
+    private RecuperarModelo modelo = new();
+    private bool enviado = false;
+    private string? mensajeError;
+
+    public class RecuperarModelo
+    {
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; } = string.Empty;
+    }
+
+    private async Task VerificarEmail()
+    {
+        mensajeError = null;
+
+        var existe = await ServicioSesion.ExisteUsuarioConEmail(modelo.Email);
+        if (existe)
+        {
+            enviado = true;
+        }
+        else
+        {
+            mensajeError = "El correo ingresado no está registrado.";
+        }
+    }
+} 

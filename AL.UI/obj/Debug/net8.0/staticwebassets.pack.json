@@ -1,0 +1,109 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AL.UI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AL.UI.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\alquilando.png",
+      "PackagePath": "staticwebassets\\alquilando.png"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\imagenes\\departamentoA.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\departamentoA.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\imagenes\\departamentoB.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\departamentoB.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\imagenes\\departamentoC.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\departamentoC.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\logo.jpg",
+      "PackagePath": "staticwebassets\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\site.js",
+      "PackagePath": "staticwebassets\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\uploads\\064e1e94-291a-4569-afd4-811854a09f82_departamento-una-habitacion.jpg",
+      "PackagePath": "staticwebassets\\uploads\\064e1e94-291a-4569-afd4-811854a09f82_departamento-una-habitacion.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\uploads\\09313649-ba4b-4adb-9723-c2111006dccd_03.jpg",
+      "PackagePath": "staticwebassets\\uploads\\09313649-ba4b-4adb-9723-c2111006dccd_03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\uploads\\77df8546-440c-43a6-bc69-dc6227fb7f16_05.jpg",
+      "PackagePath": "staticwebassets\\uploads\\77df8546-440c-43a6-bc69-dc6227fb7f16_05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\uploads\\805a4468-3cce-45ea-b70a-3ec7c0866067_dpto4B.jpg",
+      "PackagePath": "staticwebassets\\uploads\\805a4468-3cce-45ea-b70a-3ec7c0866067_dpto4B.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\uploads\\a7f41069-9111-4348-824a-3a41ad53d0fa_casaDeCampo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a7f41069-9111-4348-824a-3a41ad53d0fa_casaDeCampo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\uploads\\aea51fe2-7f3c-4347-8ce6-c2c862843607_01.jpg",
+      "PackagePath": "staticwebassets\\uploads\\aea51fe2-7f3c-4347-8ce6-c2c862843607_01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\uploads\\b404fc46-2232-4f60-9da9-13ab58eb529a_Apartamento CABA.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\b404fc46-2232-4f60-9da9-13ab58eb529a_Apartamento CABA.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\uploads\\bae8786a-2e5c-4287-80ef-59320c73e673_04.jpg",
+      "PackagePath": "staticwebassets\\uploads\\bae8786a-2e5c-4287-80ef-59320c73e673_04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\uploads\\cb660e41-74da-47f3-95b4-443c0a6290f1_dpto 4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\cb660e41-74da-47f3-95b4-443c0a6290f1_dpto 4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dante\\OneDrive\\Desktop\\Cosas C\\AlquilandoWeb-ramaMari\\AL.UI\\wwwroot\\uploads\\d7a782d5-2c33-407c-bdb5-5998ef001942_02.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d7a782d5-2c33-407c-bdb5-5998ef001942_02.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AL.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AL.UI.props",
+      "PackagePath": "build\\AL.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AL.UI.props",
+      "PackagePath": "buildMultiTargeting\\AL.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AL.UI.props",
+      "PackagePath": "buildTransitive\\AL.UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

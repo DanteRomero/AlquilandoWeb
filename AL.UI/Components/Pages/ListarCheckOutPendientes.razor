@@ -1,0 +1,99 @@
+@page "/check-outs-pendientes"
+@inject IReservasRepositorio repoReserva
+@inject IAlojamientoRepositorio repoAlojamiento
+@inject IServicioSesion servicioSesion
+@inject IUsuarioRepositorio repoUsuario
+@inject NavigationManager nav
+
+<h3>Reservas pendientes de Check-Out</h3>
+
+
+@if (cargando)
+{
+    <p>Cargando reservas...</p>
+}
+else if (reservasPendientes.Count == 0)
+{
+    <p>No hay reservas pendientes de check-out.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID Reserva</th>
+                <th>Alojamiento</th>
+                <th>Inquilino</th>
+                <th>Fecha Ingreso</th>
+                <th>Fecha Salida</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var reserva in reservasPendientes)
+            {
+                <tr>
+                    <td>@reserva.Id</td>
+                    <td>@(nombresAlojamientos.ContainsKey(reserva.IdAlojamiento) ? nombresAlojamientos[reserva.IdAlojamiento] : "Desconocido")</td>
+                    <td>@(emailsInquilinos.ContainsKey(reserva.IdUsuario) ? emailsInquilinos[reserva.IdUsuario] : "Desconocido")</td>
+                    <td>@reserva.FechaInicioEstadia.ToString("dd/MM/yyyy")</td>
+                    <td>@reserva.FechaFinEstadia.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        <a class="btn btn-sm btn-primary" href="/checkout/@reserva.Id">Realizar Check-Out</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    private List<Reserva> reservasPendientes = new List<Reserva>();
+    private bool _usuarioInicializado = false;
+    private bool cargando = true;
+    private Dictionary<int, string> nombresAlojamientos = new();
+    private Dictionary<int, string> emailsInquilinos = new();
+
+    protected override void OnInitialized()
+    {
+
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        try {
+            //await servicioSesion.InicializarUsuarioAsync();
+            _usuarioInicializado = true;
+
+            var todas = repoReserva.ObtenerTodos();
+            reservasPendientes = todas
+                .Where(r => r.EstadoCheckOut == EstadoCheckOut.Pendiente)
+                .ToList();
+            // Mapear alojamientos
+            var idsAlojamientos = reservasPendientes.Select(r => r.IdAlojamiento).Distinct().ToList();
+            var alojamientos = repoAlojamiento.ObtenerTodos();
+            nombresAlojamientos = alojamientos
+                .Where(a => idsAlojamientos.Contains(a.Id))
+                .ToDictionary(a => a.Id, a => a.Nombre ?? $"Alojamiento #{a.Id}");
+
+            // Mapear usuarios (inquilinos)
+            var idsUsuarios = reservasPendientes.Select(r => r.IdUsuario).Distinct().ToList();
+            var usuarios = repoUsuario.ListarTodos();
+            emailsInquilinos = usuarios
+                .Where(u => idsUsuarios.Contains(u.Id))
+                .ToDictionary(u => u.Id, u => u.CorreoElectronico ?? $"Usuario #{u.Id}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al cargar reservas pendientes: {ex.Message}");
+            reservasPendientes = new List<Reserva>();
+        }
+        finally
+        {
+            cargando = false;
+            StateHasChanged();
+        }  
+        
+        
+    }
+}

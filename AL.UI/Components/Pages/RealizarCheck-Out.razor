@@ -1,0 +1,119 @@
+@page "/checkout/{idReserva:int}"
+@inject IReservasRepositorio repoReserva
+@inject AL.Aplicacion.CasosDeUso.ArchivarPublicacionCasoDeUso archivarPublicacionCasoDeUso
+@inject NavigationManager nav
+@using System.Text.Json
+
+<h3>Realizar Check-Out</h3>
+
+@if (reserva == null)
+{
+    <p>Cargando reserva...</p>
+}
+else
+{
+    <p><strong>Alojamiento:</strong> @reserva.IdAlojamiento</p>
+
+    <h5>Check-list:</h5>
+
+    @foreach (var item in checklistItems)
+    {
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" @bind="estados[item]" />
+            <label class="form-check-label">@item</label>
+        </div>
+    }
+
+    <button class="btn btn-primary mt-3" @onclick="ConfirmarCheckOut">Confirmar Check-Out</button>
+
+    @if (!string.IsNullOrEmpty(mensaje))
+    {
+        <div class="alert alert-info mt-3">@mensaje</div>
+    }
+}
+
+@code {
+    [Parameter] public int idReserva { get; set; }
+
+    private Reserva? reserva;
+    private string mensaje = string.Empty;
+
+    private List<string> checklistItems = new()
+    {
+        "Sábanas limpias",
+        "Baño limpio",
+        "Baño sin daños graves",
+        "Cocina limpia",
+        "Cocina sin daños graves",
+        "Puertas y cerraduras sanas",
+        "Electrodomésticos funcionando",
+        "Sin daños estructurales graves"
+    };
+
+    private Dictionary<string, bool> estados = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        reserva = repoReserva.ObtenerPorId(idReserva);
+        if (reserva == null)
+        {
+            nav.NavigateTo("/");
+            return;
+        }
+
+        foreach (var item in checklistItems)
+        {
+            if (!estados.ContainsKey(item))
+                estados[item] = false;
+        }
+    }
+
+    private async Task ConfirmarCheckOut()
+    {
+        if (reserva == null)
+        {
+            mensaje = "No se encontró la reserva.";
+            return;
+        }
+
+        var dictEstados = new Dictionary<string, bool>(estados);
+
+        bool todoEnBuenEstado = dictEstados.All(e => e.Value);
+
+        var itemsCriticos = new List<string>
+        {
+            "Puertas y cerraduras sanas",
+            "Baño sin daños graves",
+            "Cocina sin daños graves",
+            "Sin daños estructurales graves"
+        };
+
+        bool requiereReparacion = itemsCriticos.Any(item => !dictEstados[item]);
+
+        reserva.EstadoCheckList = requiereReparacion
+            ? EstadoCheckList.RequiereReparacion
+            : (todoEnBuenEstado ? EstadoCheckList.SinProblemas : EstadoCheckList.DetallesMenores);
+
+        reserva.EstadoCheckOut = EstadoCheckOut.Completado;
+        reserva.CheckListJson = JsonSerializer.Serialize(dictEstados);
+
+        // Reutilizar mismo contexto
+        repoReserva.Modificar(reserva);
+
+        if (requiereReparacion)
+        {
+            await archivarPublicacionCasoDeUso.Ejecutar(reserva.IdAlojamiento);
+            mensaje = "Check-out registrado. El alojamiento requiere reparación y fue archivado.";
+        }
+        else if (todoEnBuenEstado)
+        {
+            mensaje = "Check-out registrado. Alojamiento liberado.";
+        }
+        else
+        {
+            mensaje = "Check-out registrado. El alojamiento requiere revisión.";
+        }
+
+        StateHasChanged();
+    }
+}

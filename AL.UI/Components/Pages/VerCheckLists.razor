@@ -1,0 +1,75 @@
+@page "/ver-checklists"
+@inject IReservasRepositorio repoReservas
+@inject IAlojamientoRepositorio repoAlojamiento
+@inject IUsuarioRepositorio repoUsuario
+
+<h2>Check-Lists de Reservas</h2>
+
+@if (Reservas is not null)
+{
+    @foreach (var reserva in Reservas)
+    {
+        if (reserva.EstadoCheckOut == EstadoCheckOut.Completado)
+        {
+            var alojamiento = Alojamientos.FirstOrDefault(a => a.Id == reserva.IdAlojamiento);
+            var usuario = Usuarios.FirstOrDefault(u => u.Id == reserva.IdUsuario);
+            var checkListItems = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, bool>>(reserva.CheckListJson);
+
+            <div class="card mb-4 p-3 border shadow-sm rounded">
+                <h4>@alojamiento?.Nombre</h4>
+                <p><strong>Inquilino:</strong> @usuario?.CorreoElectronico</p>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (checkListItems != null)
+                        {
+                            @foreach (var item in checkListItems)
+                            {
+                                <tr>
+                                    <td>@item.Key</td>
+                                    <td class="text-center">
+                                        @if (item.Value)
+                                        {
+                                            <span style="color: green;">✔️</span>
+                                        }
+                                        else
+                                        {
+                                            <span style="color: red;">❌</span>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr><td colspan="2">Sin check-list registrado</td></tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    }
+}
+else
+{
+    <p>Cargando reservas...</p>
+}
+
+@code {
+    List<Alojamiento> Alojamientos = new();
+    List<Usuario> Usuarios = new();
+    List<Reserva> Reservas = new();
+
+    protected override void OnInitialized()
+    {
+        Reservas = repoReservas.ObtenerTodas();
+        Alojamientos = repoAlojamiento.ObtenerTodos();
+        Usuarios = repoUsuario.ListarTodos();
+    }
+}

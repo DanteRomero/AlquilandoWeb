@@ -1,0 +1,155 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AL.UI
+build_property.RootNamespace = AL.UI
+build_property.ProjectDir = C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-ramaMari\AL.UI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-ramaMari\AL.UI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/AdminMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pbk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/BandejaDeEntrada.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCYW5kZWphRGVFbnRyYWRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/Chat.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGF0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/CuentaAdministrador.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdWVudGFBZG1pbmlzdHJhZG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/CuentaEncargado.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdWVudGFFbmNhcmdhZG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/DetalleAlojamiento.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZXRhbGxlQWxvamFtaWVudG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/EditarAlojamiento.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0YXJBbG9qYW1pZW50by5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/FiltrarAlojamiento.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGaWx0cmFyQWxvamFtaWVudG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/GestionarReservas.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHZXN0aW9uYXJSZXNlcnZhcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/IniciarSesion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbmljaWFyU2VzaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/ListarAlojamientos.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMaXN0YXJBbG9qYW1pZW50b3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/ListarCheckOutPendientes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMaXN0YXJDaGVja091dFBlbmRpZW50ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/ListarUsuariosFiltrados.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMaXN0YXJVc3Vhcmlvc0ZpbHRyYWRvcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/MisReservas.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNaXNSZXNlcnZhcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/ModificarTarjeta.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNb2RpZmljYXJUYXJqZXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/PublicarAlojamiento.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQdWJsaWNhckFsb2phbWllbnRvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/RealizarCheck-Out.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWFsaXphckNoZWNrLU91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/Recuperar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWN1cGVyYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/RegistrarCuenta.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWdpc3RyYXJDdWVudGEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/Resultados.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXN1bHRhZG9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/SolicitarReserva.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTb2xpY2l0YXJSZXNlcnZhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/UserMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyTWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/VerCheckLists.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWZXJDaGVja0xpc3RzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/VerInformacionDeAlojamiento.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWZXJJbmZvcm1hY2lvbkRlQWxvamFtaWVudG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Layout/AdminLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQWRtaW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ffsounu4hg
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-fnhsotggqe
+
+[C:/Users/dante/OneDrive/Desktop/Cosas C/AlquilandoWeb-ramaMari/AL.UI/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-sttar058gg
