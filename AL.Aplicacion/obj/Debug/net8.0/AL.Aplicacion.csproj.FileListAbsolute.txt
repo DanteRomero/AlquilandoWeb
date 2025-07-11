@@ -45,3 +45,4 @@ C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-ramaMari\AL.Aplicacion\obj
 C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-ramaMari\AL.Aplicacion\obj\Debug\net8.0\refint\AL.Aplicacion.dll
 C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-ramaMari\AL.Aplicacion\obj\Debug\net8.0\AL.Aplicacion.pdb
 C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-ramaMari\AL.Aplicacion\obj\Debug\net8.0\ref\AL.Aplicacion.dll
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-ramaMari\AL.Aplicacion\obj\Debug\net8.0\AL.Aplicacion.sourcelink.json

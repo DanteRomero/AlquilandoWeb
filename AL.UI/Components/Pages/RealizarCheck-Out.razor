@@ -1,4 +1,5 @@
 @page "/checkout/{idReserva:int}"
+@rendermode InteractiveServer
 @inject IReservasRepositorio repoReserva
 @inject AL.Aplicacion.CasosDeUso.ArchivarPublicacionCasoDeUso archivarPublicacionCasoDeUso
 @inject NavigationManager nav
@@ -19,7 +20,7 @@ else
     @foreach (var item in checklistItems)
     {
         <div class="form-check">
-            <input type="checkbox" class="form-check-input" @bind="estados[item]" />
+            <InputCheckbox @bind-Value="estados[item]" class="form-check-input" />
             <label class="form-check-label">@item</label>
         </div>
     }
@@ -102,8 +103,7 @@ else
 
         if (requiereReparacion)
         {
-            await archivarPublicacionCasoDeUso.Ejecutar(reserva.IdAlojamiento);
-            mensaje = "Check-out registrado. El alojamiento requiere reparación y fue archivado.";
+            mensaje = "Check-out registrado. El alojamiento requiere reparación. Por favor, informe a un administrador.";
         }
         else if (todoEnBuenEstado)
         {

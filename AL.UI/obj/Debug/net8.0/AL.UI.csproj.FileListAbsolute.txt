@@ -315,3 +315,4 @@ C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-ramaMari\AL.UI\bin\Debug\n
 C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-ramaMari\AL.UI\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
 C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-ramaMari\AL.UI\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
 C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-ramaMari\AL.UI\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\dante\OneDrive\Desktop\Cosas C\AlquilandoWeb-ramaMari\AL.UI\obj\Debug\net8.0\AL.UI.sourcelink.json
